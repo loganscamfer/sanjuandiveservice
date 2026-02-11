@@ -940,7 +940,7 @@ background: url("images/shadow.png");
 #logo h1 {
 	font-weight: 900; text-transform: uppercase; color: #fff; font-size: 2em; letter-spacing: 0.25em; }
 #logo p {
-	color: #eee; color: rgba(255, 255, 255, 0.5); text-transform: uppercase; margin: 1.25em 0 0 0; display: block; letter-spacing: 0.2em; font-size: 0.9em; }
+	color: #eee; color: rgba(255, 255, 255, 0.5); text-transform: uppercase; margin: 1.25em 0 0 0; display: block; letter-spacing: 0.2em; font-size: 1.2em; }
 
 /* Nav */
 
@@ -978,7 +978,7 @@ background: url("images/shadow.png");
 #intro p.style1 {
 	font-size: 1.5em; letter-spacing: 0.075em; }
 #intro p.style2 {
-	font-weight: 700; color: #fff; border-radius: 0.35em; box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25); font-size: 2.75em; letter-spacing: 0.075em; line-height: 1.35em; padding: 1em 0 1em 0; margin-bottom: 1em; }
+	font-weight: 700; color: #fff;  font-size: 2em; letter-spacing: 0.075em; line-height: 1.35em; padding: 1em 0 1em 0; margin-bottom: 1em; }
 #intro p.style2 a {
 	color: inherit; text-decoration: none; }
 #intro p.style3 {
@@ -1065,7 +1065,6 @@ background: url("images/shadow.png");
 	.wrapper { padding: 4em 0 7em 0; }
 	/* Logo */
 	#logo { margin-top: -0.5em !important; }
-	#logo h1 { font-size: 1.75em; }
 	/* Intro */
 	#intro { padding-bottom: 7em; }
 	#intro p.style1 { font-size: 1.25em; }
@@ -1075,7 +1074,29 @@ background: url("images/shadow.png");
 	#footer header.style1 { padding-bottom: 4em; margin-bottom: 4em; border-bottom: solid 1px rgba(255, 255, 255, 0.05); }
 	/* Copyright */
 	#copyright { padding-top: 4em; margin-top: 4em; } }
+/* Base h1 size increase */
+h1 {
+    font-size: 3em;  /* Adjust this value as needed (e.g., 3em for even larger) */
+}
 
+/* Target the logo h1 specifically if needed */
+#logo h1 {
+    font-size: 3em;  /* Or larger, like 3em */
+    letter-spacing: 0.3em;  /* Optional: Slight increase for better spacing with larger size */
+}
+
+/* Update media queries to scale with the new base size */
+@media screen and (max-width: 1280px) {
+    #logo h1 {
+        font-size: 2.5em;  /* Scaled down but still larger than original 1.75em */
+    }
+}
+
+@media screen and (max-width: 736px) {
+    #logo h1 {
+        font-size: 2em;  /* Scaled for mobile, larger than original 1.5em */
+    }
+}
 /* Medium */
 
 #navPanel, #titleBar {
@@ -1178,3 +1199,11 @@ background: url("images/shadow.png");
 	#copyright ul { padding: 1em 2em; width: 100%; }
 	#copyright ul li { display: block; margin: 0.5em 0 0 0; border-left: 0; padding: 0; }
 	#copyright ul li:first-child { margin-top: 0; } }
+.pricing-subtitle {
+    font-size: 1.9em;           /* adjust freely: 1.8–2.2em looks good */
+    font-weight: 700;
+    color: #2f333b;
+    margin: 2em 0 1em;
+    text-align: left;
+    letter-spacing: 0.04em;
+}
